@@ -29,10 +29,20 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-              }
+                 
+                root: [
+                 '#feda75',
+                       '#fa7e1e',
+                      '#d62976',
+                       '#962fbf',
+                       '#4f5bd5',
+                
+                ]
+                    
             }
           }
         }
+      }
       </script>
 
     <style>
@@ -163,36 +173,37 @@
           
         </div>
 
+        <!-- Attachment -->
 
         <div class=" lg:w-[1100px] mx-auto ">
           <div class=" flex lg:justify-around border-4 border-red bg-white py-4 text-center relative -top-5 lg:-top-40 lg:mt-10">
             <!-- 1 -->
             <div>
               <img src="images/fruit1.png" alt="">
-              <p class="mt-3">Grapes</p>
+              <p class="mt-3 text-[10px] font-semibold lg:text-xl">Grapes</p>
             </div>
 
             <!-- 2 -->
             <div>
               <img src="images/fruit2.png" alt="">
-              <p class="mt-3">Orange</p>
+              <p class="mt-3 text-[10px] font-semibold  lg:text-xl">Orange</p>
             </div>
             <!-- 3 -->
             <div>
               <img src="images/fruit3.png" alt="">
-              <p class="mt-3">Mango</p>
+              <p class="mt-3 text-[10px] font-semibold  lg:text-xl">Mango</p>
             </div>
 
             <!-- 4 -->
             <div>
               <img src="images/fruit4.png" alt="">
-              <p class="mt-3">Strawberry</p>
+              <p class="mt-3 text-[10px] font-semibold  lg:text-xl">Strawberry</p>
             </div>
 
             <!-- 5 -->
             <div>
               <img src="images/fruit5.png" alt="">
-              <p class="mt-3">Pomegranat</p>
+              <p class="mt-3 text-[10px] font-semibold  lg:text-xl">Pomegranate</p>
             </div>
 
           </div>
@@ -204,12 +215,12 @@
     <section class="container mx-auto my-24">
       <!-- Deal -->
       <div class=" lg:flex justify-between gap-10">
-        <div class="text-center lg:w-[600px] space-y-4 lg:text-left">
+        <div class="pb-2 text-center lg:w-[600px] space-y-4 lg:text-left">
           <h4 class="text-5xl font-extrabold">Deal of the day</h4>
-          <p class="">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <p class="pr-[2px] pl[3px] lg:p-0">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
 
-        <div class="flex pl-4 lg:w-[350px] gap-5 items-center">
+        <div class="flex pl-10 lg:mr-[100px] lg:w-[350px] gap-5 items-center">
           
           <div class="">
             <h3 class="text-2xl lg:text-5xl font-extrabold">29</h3>
@@ -241,8 +252,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-5">
 
           <!-- card 1 -->
-          <div class="border-4 rounded-xl border-[#1212121A] h-[470px] space-y-7 flex flex-col items-center  text-center">
-            <img class="py-5 " src="images/fruit6.png" alt="">
+          <div class="border-4 rounded-xl border-[#1212121A] h-[470px] lg:space-y-7 flex flex-col items-center  text-center">
+            <img class="py-5" src="images/fruit6.png" alt="">
             <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
             <p>Apples</p>
             <div>
@@ -266,13 +277,13 @@
               <dialog id="my_modal_1" class="modal">
                 <form method="dialog" class="modal-box">
 
-                  <div class=" h-[50px] space-y-7 flex flex-col items-center  text-center">
-                    <img class="py-5 " src="images/fruit6.png" alt="">
-                    <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
-                    <p class="text-4xl font-extrabold">Apples</p>
+                  <div class="h-[172px] mx-auto lg:h-auto space-y-2 lg:space-y-7 flex flex-col items-center  text-center">
+                    <img class=" py-0 lg:py-5 w-[10%] lg:w-60" src="images/fruit6.png" alt="">
+                    <h5 class="lg:text-2xl lg:font-bold">12.90$ - 18.85$</h5>
+                    <p class="lg:text-4xl lg:font-extrabold">Apples</p>
                     <div>
-                      <div class="border-b-4 border-[#1212121A] mb-5"></div>
-                      <div class="rating rating-lg rating-half mb-7">
+                      <div class="border-b-4 border-[#1212121A] mb-2 lg:mb-5"></div>
+                      <div class="rating rating-sm lg:rating-lg rating-half lg:mb-7">
                         <input type="radio" name="rating-10" class="rating-hidden" />
                         <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
@@ -285,10 +296,10 @@
                         <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-2" />
                       </div>
-                  <div class="modal-action">
+                  <div class="">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn border-red-600 text-red-600 pt-4 pb-4 px-6">Close</button>
-                    <button class="btn border-red-600 bg-red-600 text-white pt-4 pb-4 px-6">Buy Now</button>
+                    <button class="border-2 rounded-2xl border-red-600 text-red-600 pt-2 pb-2 px-4 lg:pt-4 lg:pb-4 lg:px-6">Close</button>
+                    <button class="border-2 rounded-2xl border-red-600 bg-red-600 text-white pt-2 pb-2 px-4 lg:pt-4 lg:pb-4 lg:px-6">Buy Now</button>
                   </div>
                 </form>
               </dialog>
@@ -296,8 +307,8 @@
           </div>
     
           <!-- card 2 -->
-          <div class="border-4 rounded-xl border-[#1212121A] h-[470px] space-y-7 flex flex-col items-center  text-center">
-            <img class="py-5 " src="images/fruit7.png" alt="">
+          <div class="border-4 rounded-xl border-[#1212121A] h-[470px] lg:space-y-7 flex flex-col items-center  text-center">
+            <img class="py-5" src="images/fruit7.png" alt="">
             <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
             <p>Orange</p>
             <div>
@@ -321,13 +332,13 @@
               <dialog id="my_modal_2" class="modal">
                 <form method="dialog" class="modal-box">
 
-                  <div class=" h-[550px] space-y-7 flex flex-col items-center  text-center">
-                    <img class="py-5 " src="images/fruit7.png" alt="">
-                    <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
-                    <p class="text-4xl font-extrabold">Orange</p>
+                  <div class="h-[172px] mx-auto lg:h-auto space-y-2 lg:space-y-7 flex flex-col items-center  text-center">
+                    <img class=" py-0 lg:py-5 w-[10%] lg:w-60" src="images/fruit7.png" alt="">
+                    <h5 class="lg:text-2xl lg:font-bold">12.90$ - 18.85$</h5>
+                    <p class="lg:text-4xl lg:font-extrabold">Orange</p>
                     <div>
-                      <div class="border-b-4 border-[#1212121A] mb-5"></div>
-                      <div class="rating rating-lg rating-half mb-7">
+                      <div class="border-b-4 border-[#1212121A] mb-2 lg:mb-5"></div>
+                      <div class="rating rating-sm lg:rating-lg rating-half lg:mb-7">
                         <input type="radio" name="rating-10" class="rating-hidden" />
                         <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
@@ -340,10 +351,10 @@
                         <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-2" />
                       </div>
-                  <div class="modal-action">
+                  <div class="">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn border-red-600 text-red-600 pt-4 pb-4 px-6">Close</button>
-                    <button class="btn border-red-600 bg-red-600 text-white pt-4 pb-4 px-6">Buy Now</button>
+                    <button class="border-2 rounded-2xl border-red-600 text-red-600 pt-2 pb-2 px-4 lg:pt-4 lg:pb-4 lg:px-6">Close</button>
+                    <button class="border-2 rounded-2xl border-red-600 bg-red-600 text-white pt-2 pb-2 px-4 lg:pt-4 lg:pb-4 lg:px-6">Buy Now</button>
                   </div>
                 </form>
               </dialog>
@@ -351,8 +362,8 @@
           </div>
 
           <!-- card 3 -->
-          <div class="border-4 rounded-xl border-[#1212121A] h-[470px] space-y-7 flex flex-col items-center  text-center">
-            <img class="py-5 " src="images/fruit8.png" alt="">
+          <div class="border-4 rounded-xl border-[#1212121A] h-[470px] lg:space-y-7 flex flex-col items-center  text-center">
+            <img class="py-5" src="images/fruit8.png" alt="">
             <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
             <p>Red Dragon</p>
             <div>
@@ -376,13 +387,13 @@
               <dialog id="my_modal_3" class="modal">
                 <form method="dialog" class="modal-box">
 
-                  <div class=" h-[550px] space-y-7 flex flex-col items-center  text-center">
-                    <img class="py-5 " src="images/fruit8.png" alt="">
-                    <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
-                    <p class="text-4xl font-extrabold">Red Dragon</p>
+                  <div class="h-[172px] mx-auto lg:h-auto space-y-2 lg:space-y-7 flex flex-col items-center  text-center">
+                    <img class=" py-0 lg:py-5 w-[10%] lg:w-60" src="images/fruit8.png" alt="">
+                    <h5 class="lg:text-2xl lg:font-bold">12.90$ - 18.85$</h5>
+                    <p class="lg:text-4xl lg:font-extrabold">Red Dragon</p>
                     <div>
-                      <div class="border-b-4 border-[#1212121A] mb-5"></div>
-                      <div class="rating rating-lg rating-half mb-7">
+                      <div class="border-b-4 border-[#1212121A] mb-2 lg:mb-5"></div>
+                      <div class="rating rating-sm lg:rating-lg rating-half lg:mb-7">
                         <input type="radio" name="rating-10" class="rating-hidden" />
                         <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
@@ -395,10 +406,10 @@
                         <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-2" />
                       </div>
-                  <div class="modal-action">
+                  <div class="">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn border-red-600 text-red-600 pt-4 pb-4 px-6">Close</button>
-                    <button class="btn border-red-600 bg-red-600 text-white pt-4 pb-4 px-6">Buy Now</button>
+                    <button class="border-2 rounded-2xl border-red-600 text-red-600 pt-2 pb-2 px-4 lg:pt-4 lg:pb-4 lg:px-6">Close</button>
+                    <button class="border-2 rounded-2xl border-red-600 bg-red-600 text-white pt-2 pb-2 px-4 lg:pt-4 lg:pb-4 lg:px-6">Buy Now</button>
                   </div>
                 </form>
               </dialog>
@@ -406,8 +417,8 @@
           </div>
 
           <!-- card 4 -->
-          <div class="border-4 rounded-xl border-[#1212121A] h-[470px] space-y-7 flex flex-col items-center  text-center">
-            <img class="py-5 " src="images/fruit9.png" alt="">
+          <div class="border-4 rounded-xl border-[#1212121A] h-[470px] lg:space-y-7 flex flex-col items-center  text-center">
+            <img class="py-5" src="images/fruit9.png" alt="">
             <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
             <p>Banana</p>
             <div>
@@ -417,13 +428,13 @@
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
                 <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
-                <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-2" />
-                <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-1" />
-                <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-gray-300 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-gray-300 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-gray-300 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-gray-300 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-gray-300 mask mask-star-2 mask-half-2" />
+                <input type="radio" name="rating-10" class="bg-gray-300 mask mask-star-2 mask-half-1" />
+                <input type="radio" name="rating-10" class="bg-gray-300 mask mask-star-2 mask-half-2" />
               </div><br>
 
               <!-- Open the modal using ID.showModal() method -->
@@ -431,13 +442,13 @@
               <dialog id="my_modal_4" class="modal">
                 <form method="dialog" class="modal-box">
 
-                  <div class=" h-[550px] space-y-7 flex flex-col items-center  text-center">
-                    <img class="py-5 " src="images/fruit9.png" alt="">
-                    <h5 class="text-2xl font-bold">12.90$ - 18.85$</h5>
-                    <p class="text-4xl font-extrabold">Banana</p>
+                  <div class="h-[172px] mx-auto lg:h-auto space-y-2 lg:space-y-7 flex flex-col items-center  text-center">
+                    <img class=" py-0 lg:py-5 w-[10%] lg:w-60" src="images/fruit9.png" alt="">
+                    <h5 class="lg:text-2xl lg:font-bold">12.90$ - 18.85$</h5>
+                    <p class="lg:text-4xl lg:font-extrabold">Banana</p>
                     <div>
-                      <div class="border-b-4 border-[#1212121A] mb-5"></div>
-                      <div class="rating rating-lg rating-half mb-7">
+                      <div class="border-b-4 border-[#1212121A] mb-2 lg:mb-5"></div>
+                      <div class="rating rating-sm lg:rating-lg rating-half lg:mb-7">
                         <input type="radio" name="rating-10" class="rating-hidden" />
                         <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
@@ -450,10 +461,10 @@
                         <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-10" class="bg-gray-500 mask mask-star-2 mask-half-2" />
                       </div>
-                  <div class="modal-action">
+                  <div class="">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn border-red-600 text-red-600 pt-4 pb-4 px-6">Close</button>
-                    <button class="btn border-red-600 bg-red-600 text-white pt-4 pb-4 px-6">Buy Now</button>
+                    <button class="border-2 rounded-2xl border-red-600 text-red-600 pt-2 pb-2 px-4 lg:pt-4 lg:pb-4 lg:px-6">Close</button>
+                    <button class="border-2 rounded-2xl border-red-600 bg-red-600 text-white pt-2 pb-2 px-4 lg:pt-4 lg:pb-4 lg:px-6">Buy Now</button>
                   </div>
                 </form>
               </dialog>
@@ -467,72 +478,80 @@
         
       </div>
       <div class="container mx-auto flex justify-center items-center">
-        <button class="btn bg-[#F85559] text-white">Shop All</button>
+        <button class="btn bg-[#F85559] text-white py-8 px-6">Shop All</button>
       </div>
     </section>
 
     <!-- Team -->
-    <section class="container mx-auto mt-24 mb-0">
+    <section class="container mx-auto mt-24 -mb-[535px] lg:-mb-[610px] ">
 
       <div class="hero h-[700px] " style="background-image: url(images/banner1.png);">
         <div class="hero-overlay bg-opacity-60 "></div>
-        <div class="text-white text-center max-w-1lg pb-20">
-          <h2 class="text-5xl font-bold">Meet the team section</h2>
-          <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        <div class="text-white text-center max-w-1lg pb-60">
+          <h2 class="text-1xl font-semibold lg:text-5xl lg:font-bold -mt-60 lg:mt-0 pt-6 mb-3 ">Meet the team section</h2>
+          <p class="mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
       </div>
 
      
      
-      <div class="w-[1180px] mx-auto relative bottom-80 text-white flex lg:justify-around">
+      <div class="w-[1180px] h-[700px]  lg:mx-auto relative -top-[490px] lg:-top-80 lg:bottom-80 text-white inline text-center lg:flex lg:justify-around">
 
         <!-- Member 1 -->
-        <div class="text-center space-y-4 pb-10">
-          <img src="images/member1.png" alt="">
-          <h5 class="text-2xl font-bold">Awlad Hossain</h5>
-          <p>Fruits Expert</p>
-          <div class="">
-            <a href=""><i class="fa-brands fa-facebook border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
-            <a href=""><i class="fa-brands fa-twitter border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
+        <div class="lg:text-center mb-20 -mt-20 lg:space-y-4 lg:pb-100 ">
+          <img class="max-w-[15%] -mt-70 relative left-[11rem] lg:left-[0rem] lg:ml-2 lg:max-w-[100%] text-center" src="images/member1.png" alt="">
+          <h5 class="text-base lg:text-2xl font-bold">Awlad Hossain</h5>
+          <p class=>Fruits Expert</p>
+          <div class="pb-2">
+            <a href=""><i class="fa-brands fa-facebook lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3"></i></a>
+            <a href=""><i class="fa-brands fa-twitter lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3""></i></a>
           </div>
         </div>
 
-       <!-- Member 2 -->
-       <div class="text-center space-y-4 pb-10">
-        <img src="images/member2.png" alt="">
-        <h5 class="text-2xl font-bold">Safia Chowdhury</h5>
-        <p>Fruits Expert</p>
-        <div class="">
-          <a href=""><i class="fa-brands fa-facebook border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
-          <a href=""><i class="fa-brands fa-twitter border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
+      
+      
+        <!-- Member 2 -->
+        <div class="lg:text-center mb-20 -mt-20 lg:space-y-4 lg:pb-100 ">
+          <img class="max-w-[15%] -mt-70 relative left-[11rem] lg:left-[0rem] lg:ml-2 lg:max-w-[100%] text-center" src="images/member2.png" alt="">
+          <h5 class="text-base lg:text-2xl font-bold">Safia Chowdhury</h5>
+          <p class=>Fruits Expert</p>
+          <div class="pb-2">
+            <a href=""><i class="fa-brands fa-facebook lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3"></i></a>
+            <a href=""><i class="fa-brands fa-twitter lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3""></i></a>
+          </div>
         </div>
-      </div>
 
+        
+       
         <!-- Member 3 -->
-        <div class="text-center space-y-4 pb-10">
-          <img src="images/member3.png" alt="">
-          <h5 class="text-2xl font-bold">Rokib Hossain</h5>
-          <p>Fruits Expert</p>
-          <div class="">
-            <a href=""><i class="fa-brands fa-facebook border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
-            <a href=""><i class="fa-brands fa-twitter border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
+        <div class="lg:text-center mb-20 -mt-20 lg:space-y-4 lg:pb-100 ">
+          <img class="max-w-[15%] -mt-70 relative left-[11rem] lg:left-[0rem] lg:ml-2 lg:max-w-[100%] text-center" src="images/member3.png" alt="">
+          <h5 class="text-base lg:text-2xl font-bold">Rokib Hossain</h5>
+          <p class=>Fruits Expert</p>
+          <div class="pb-2">
+            <a href=""><i class="fa-brands fa-facebook lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3"></i></a>
+            <a href=""><i class="fa-brands fa-twitter lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3""></i></a>
           </div>
         </div>
 
-      <!-- Member 4 -->
-      <div class="text-center space-y-4 pb-10">
-        <img src="images/member4.png" alt="">
-        <h5 class="text-2xl font-bold">Chaity</h5>
-        <p>Fruits Expert</p>
-        <div class="">
-          <a href=""><i class="fa-brands fa-facebook border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
-          <a href=""><i class="fa-brands fa-twitter border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin border-4 rounded-full border-[#F85559] bg-[#F85559] p-1 mr-3"></i></a>
+
+     
+    
+        <!-- Member 4 -->
+        <div class="lg:text-center mb-20 -mt-20 lg:space-y-4 lg:pb-100 ">
+          <img class="max-w-[15%] -mt-70 relative left-[11rem] lg:left-[0rem] lg:ml-2 lg:max-w-[100%] text-center" src="images/member4.png" alt="">
+          <h5 class="text-base lg:text-2xl font-bold">Chaity</h5>
+          <p class=>Fruits Expert</p>
+          <div class="pb-2">
+            <a href=""><i class="fa-brands fa-facebook lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3"></i></a>
+            <a href=""><i class="fa-brands fa-twitter lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin lg:border-4 lg:rounded-full lg:border-[#F85559] lg:bg-[#F85559] p-1 mr-3""></i></a>
+          </div>
         </div>
-      </div>
+
 
 
       </div>
@@ -560,7 +579,7 @@
              <!-- 1  -->
       <div class="flex items-center gap-5">
 
-        <div class="flex flex-row">
+        <div class="flex flex-row lg:flex-row">
           <a href=""><i class="fa-solid fa-people-group text-1xl border-4 rounded-full border-[#1212121A] p-4 bg-[#1212121A] text-gray-400"></i></a>
         </div>
         <div class="space-y-3">
@@ -573,7 +592,7 @@
               <!-- 2  -->
       <div class="flex items-center gap-5">
 
-        <div class="flex flex-row">
+        <div class="flex flex-row lg:flex-row">
           <a href=""><i class="fa-solid fa-heart-circle-plus text-1xl border-4 rounded-full border-[#1212121A] p-4 bg-[#1212121A] text-gray-400"></i></a>
         </div>
         <div class="space-y-3">
@@ -586,7 +605,7 @@
               <!-- 3  -->
       <div class="flex items-center gap-5">
 
-        <div class="flex flex-row">
+        <div class="flex flex-row lg:flex-row">
           <a href=""><i class="fa-solid fa-gift text-1xl border-4 rounded-full border-[#1212121A] p-4 bg-[#1212121A] text-gray-400"></i></a>
         </div>
         <div class="space-y-3">
@@ -605,7 +624,7 @@
 
         <div>
 
-          <div class="flex flex-col lg:justify-end lg:items-end text-end gap-5">
+          <div class="flex flex-col text-right  lg:justify-end lg:items-end lg:text-end gap-5">
             <!-- 1  -->
      <div class="flex items-center gap-5">
 
@@ -617,7 +636,7 @@
        </div>
        <div class="flex flex-row">
         
-        <a href=""><i class="fa-solid fa-apple-whole text-1xl border-4 rounded-full border-[#1212121A] p-4 bg-[#1212121A] text-gray-400"></i></a>
+        <a href=""><i class="fa-solid fa-apple-whole text-1xl border-4 rounded-full border-[#1212121A] p-4 bg-[#1212121A] text-gray-400 "></i></a>
       </div>
        </div>
 
@@ -665,6 +684,7 @@
 
     </main>
 
+    <!-- Footer section -->
     <footer class="footer footer-center p-10 bg-[#121212] text-white">
       <div class="flex ">
         
@@ -672,26 +692,33 @@
         <h2 class="text-5xl font-bold">Fruit Burst</h2>
       </div> 
 
-      <div >
-        <ul class="grid grid-cols-4 lg:grid-cols-6 gap-7">
+      <div class="grid grid-cols-1 lg:flex ">
+        <ul class="flex gap-7">
           <li><a href="">Home</a></li>
           <li><a href="">About Us</a></li>
           <li><a href="">Shop</a></li>
-          <li><a href="">All Fruits</a></li>
+          <li class="pr-3"><a href="">All Fruits</a></li>
+        </ul>
+        <ul class="flex gap-7">
           <li><a href="">Supports</a></li>
           <li><a href="">My Account</a></li>
         </ul>
       </div>
       
       <div class="flex justify-between text-lg gap-5">
-        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href=""><i class="fa-brands fa-facebook-f text-blue-500" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-youtube text-red-600" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-apple" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter text-blue-600 hover:text-white hover:bg-blue-500 rounded-full border-1 hover:px-2 py-2" aria-hidden="true"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-f text-blue-900 hover:text-white hover:bg-blue-500 rounded-full border-1 hover:px-3 py-2 " aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-youtube text-red-700 hover:text-white hover:bg-red-600 rounded-full border-1 hover:px-2 py-2" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-linkedin text-blue-900 hover:text-white hover:bg-blue-900 rounded-full border-1 hover:px-3 py-2 " aria-hidden="true"></i></a>
+
+        <a href=""><i class="fa fa-instagram rounded-full  bg-gradient-to-r from-pink-500 to-yellow-900  hover:from-pink-900 hover:to-yellow-500 hover:white hover:px-2 hover:py-2" aria-hidden="true"></i></a>
+
+        <a href=""><i class="fa fa-apple text-[#666666] hover:bg-[#666666] hover:border-1 rounded-full hover:text-white hover:px-2 py-2 " aria-hidden="true"></i></a>
       </div>
     </footer>
+    <button type="button" class=" ...">
+      Hover me
+    </button>
     
 </body>
 </html>
